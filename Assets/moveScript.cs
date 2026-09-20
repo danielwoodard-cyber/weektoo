@@ -14,9 +14,9 @@ public class moveScript : MonoBehaviour
     }
 
  
-    public float moveSpeed = 10f;
+    public float moveSpeed = 20f;
 
-    public float rotateSpeed = 5f;
+    public float rotateSpeed = 15f;
     private float verticalRotation = 0f;
 
     public Transform playerCamera;

@@ -19,16 +19,6 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.collab-proxy@2.13.6": {
-      "name": "com.unity.collab-proxy",
-      "displayName": "Unity Version Control",
-      "resolvedPath": "C:\\Users\\esims\\OneDrive\\Documents\\GitHub\\weektoo\\Library\\PackageCache\\com.unity.collab-proxy@4628d2ba6ea4",
-      "fingerprint": "4628d2ba6ea45aaa16a8b78239d0f6f9c2176982",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "2.13.6",
-      "source": "registry",
-      "testable": false
-    },
     "com.unity.ide.rider@3.0.40": {
       "name": "com.unity.ide.rider",
       "displayName": "JetBrains Rider Editor",
