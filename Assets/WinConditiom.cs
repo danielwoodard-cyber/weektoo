@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class WinConditiom : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-     [SerializeField]private Transform cube;
+    public Transform player;
+    public Transform cube;
     private float winDistance = 1.5f;
 
     private bool hasWon = false;

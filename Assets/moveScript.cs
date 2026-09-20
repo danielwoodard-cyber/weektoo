@@ -14,10 +14,12 @@ public class moveScript : MonoBehaviour
     }
 
  
-    public float moveSpeed = 5f;
+    public float moveSpeed = 10f;
 
-    public float rotateSpeed = 2f;
+    public float rotateSpeed = 5f;
     private float verticalRotation = 0f;
+
+    public Transform playerCamera;
 
     public void Update()
 
@@ -33,6 +35,7 @@ public class moveScript : MonoBehaviour
         verticalRotation = Mathf.Clamp(verticalRotation, -80f, 80f);
 
         transform.localEulerAngles = new Vector3(verticalRotation, transform.localEulerAngles.y, 0f);
+        playerCamera.localEulerAngles = new Vector3(verticalRotation, 0f, 0f);
 
 
 
@@ -70,8 +73,19 @@ public class moveScript : MonoBehaviour
         {
             move += Vector3.right;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            move += Vector3.down;
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            move += Vector3.up;
+        }
 
-
+        if (Input.GetKey(KeyCode.None))
+        {
+            move = Vector3.zero;
+        }
 
         transform.Translate(move * moveSpeed * Time.deltaTime);
     }
